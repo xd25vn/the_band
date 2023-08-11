@@ -1,0 +1,76 @@
+/* PC */
+@media (min-width: 1024px) {
+    #nav > li > a {
+        position: relative;
+    }
+    
+    #nav > li > a::before {
+        content: "";
+        height: 4px;
+        background: rgb(37, 148, 212);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0px;
+    }
+    
+    #nav > li:hover > a::before {
+        width: 100%;
+        transition: all 0.25s linear;
+    }
+}
+
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px) {
+    #nav > li > a {
+        position: relative;
+    }
+    
+    #nav > li > a::before {
+        content: "";
+        height: 4px;
+        background: rgb(37, 148, 212);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 0px;
+    }
+    
+    #nav > li:hover > a::before {
+        width: 100%;
+        transition: all 0.25s linear;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 740px) {
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    nav #nav  li {
+        display: block; 
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+
+}

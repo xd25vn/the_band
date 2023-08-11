@@ -1,0 +1,399 @@
+/* Reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+.color-white {
+    color: #fff !important;
+}
+
+#content .clear {
+    clear: both;
+}
+
+.row {
+    margin: 0 -8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col {
+    float: left;
+    padding: 0 8px;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+/* Main */
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    background-color: #000;
+    position: fixed;
+    height: 46.5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav {
+    position: relative;
+}
+
+#nav {
+    display: inline-block;
+}
+
+nav #nav  li {
+    position: relative; 
+    display: inline-block; 
+}
+
+#nav .icon-arrow-nav {
+    font-size: 13px;
+    color: white;
+}
+
+#nav li:hover .icon-arrow-nav {
+    color: black;
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+#nav > li > a { 
+    color: white;
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+}
+
+nav #nav li:hover > a {
+    background: #ccc;
+    color: #000;
+}
+
+#nav > li:hover > .subnav {
+   display: block;
+}
+
+#nav .subnav {
+    position: absolute;
+    background: #fff;
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    display: none;
+    left: 0px;
+    top: 100%;
+}
+
+#nav .subnav li {
+    width: 100%;
+    min-width: 160px;
+}
+
+#nav .subnav > li > a {
+    color: #000;
+    line-height: 38.5px;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#header .mobile-menu-btn {
+    display: none;
+}
+
+#header .search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+}
+
+#header .button-mobile,
+#header .search-btn .icon-search-nav {
+    font-size: 20px;
+    color: white;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+
+#sidebar {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/silder1.jpg') left top / cover no-repeat;
+    position: relative;
+}
+
+#sidebar .text-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    color: white;
+    transform: translateX(-50%);
+    padding: 32px 0;
+}
+
+#sidebar .text-content h2 {
+    margin: 10px 0;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+#sidebar .text-content .text-slider {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .content-section {
+   padding: 64px 16px; 
+}
+
+#content .content-section {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .heading-section,
+#content .sub-heading-section {
+    text-align: center;
+}
+
+#content .heading-section {
+    letter-spacing: 4;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#content .sub-heading-section {
+    margin: 15px 0;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-section {
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+#content .member-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+#content .member-items {
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+}
+
+#content .img-band-member {
+    width: 154px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#content .member-items .name-member {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+#content .tour-list {
+    background: #000;
+}
+
+#content .tour-list li {
+    color: #757575;
+    background: #fff;
+    list-style: none;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px;
+}
+
+#content .tour-items .sell-out {
+    padding: 4px 8px;
+    margin-left: 16px;
+    background: #f44336;
+    color: #fff;
+}
+
+#content .tour-list .tour-items {
+    margin-top: 15px;
+}
+
+#content .tour-items .number-ticket {
+    float: right;
+    background: #000;
+    color: #fff;
+    padding: 0px 8px;
+    margin-right: 16px;
+    border-radius: 50%;
+    height: 22.500px; 
+    width: 22.500px;
+    line-height: 22.500px;
+    text-align: center;
+    margin-top: -1.5px;
+}
+
+#content .places-list {
+    margin: 0 -8px;
+}
+
+#content .places-item .place-img {
+    width: 100%;
+}
+
+#content .places-item .place-img:hover {
+    opacity: 0.6;
+}
+
+#content .places-item {
+    float: left;
+    width: 33.33333%;
+    padding: 32px 8px;
+}
+
+#content .places-body {
+    background: white;
+    height: 188px;
+    width: 235px;
+    padding: 0 16px;
+}
+
+#content .places-body .places-heading {
+    font-size: 15px;
+    padding: 15px 0;
+    font-weight: 550;
+}
+
+#content .places-body .places-time {
+    font-size: 15px;
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+#content .places-body .places-desc {
+    font-size: 15px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+#content .places-body .btn-place {
+    font-size: 15px;
+    color: white;
+    background: #000;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.contact-list {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 32px 0;
+}
+
+.contact-list i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-list .form-control {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.contact-list .form-control:focus {
+    outline: none;
+}
+
+.contact-list .form-control-btn {
+    float: right;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    padding: 10.5px 17px;
+}
+
+#content .btn-finish:hover {
+    cursor: pointer;
+    background: #ccc;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.img-section img {
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .icon-lists a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+}
+
+#footer .text-hover:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .text-item {
+    color: rgba(0, 0, 0, 0.6);
+    margin: 20px 0 15px;
+}
+
+#footer .text-item a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
