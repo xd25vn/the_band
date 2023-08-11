@@ -157,7 +157,7 @@ nav #nav li:hover > a {
 #sidebar {
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/silder1.jpg') left top / cover no-repeat;
+    background: url('./img/silder1.jpg') left top / cover no-repeat;
     position: relative;
 }
 
